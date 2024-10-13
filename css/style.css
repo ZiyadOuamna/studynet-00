@@ -1,9 +1,12 @@
-@media only screen and (max-width: 320px){
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* @media only screen and (max-width: 320px){
     
     body{
         position: relative;
-    
-        background-image:url('pics/bg.png');
+        background-image:url('IMG/bg.png');
         background-size: cover;
         
     }
@@ -79,9 +82,9 @@
     }
     .body{
         font-weight: bolder;
-        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient */
-        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte */
-        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient */
+        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient 
+        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte 
+        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient 
     }
     .body h1{
         color: white;
@@ -149,14 +152,14 @@
 
     }
     
-}
+} */
 /*----les grande ecrans dans les pcs  ------*/
-@media only screen and (min-width: 1440px){
+/* @media only screen and (min-width: 1440px){
     
     body{
         position: relative;
     
-        background-image:url('pics/bg.png');
+        background-image:url('IMG/bg.png');
         background-size: cover;
         
     }
@@ -171,7 +174,7 @@
         right: 10%;
     }
     .logo{
-        position: relative;
+      
         left: 15%;
         top: 50px;
     }
@@ -232,9 +235,9 @@
     }
     .body{
         font-weight: bolder;
-        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient */
-        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte */
-        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient */
+        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient
+        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte 
+        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient
     }
     .body h1{
         color: white;
@@ -302,16 +305,16 @@
 
     }
     
-}
+} */
 
 /*-------les grands phones ------*/
-
+/* 
 @media only screen and (max-width: 760px){
     
     body{
         position: relative;
     
-        background-image:url('pics/bg.png');
+        background-image:url('IMG/bg.png');
         background-size: cover;
         
     }
@@ -387,9 +390,9 @@
     }
     .body{
         font-weight: bolder;
-        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient */
-        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte */
-        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient */
+        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient 
+        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte 
+        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient 
     }
     .body h1{
         color: white;
@@ -457,21 +460,21 @@
 
     }
     
-}
+} */
 
 /*-----les normale phones ----*/
 
 
 /*pour telephone*/
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     
     body{
         position: relative;
-        background-image:url('pics/bg.png');
+        background-image:url('../IMG/bg.png');
         background-size: cover;
         
     } 
-    }
+    
     .logo{
         position: relative;
         left: 2%;
@@ -495,9 +498,9 @@
     
     .body{
         font-weight: bolder;
-        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient */
-        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte */
-        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient */
+        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient 
+        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte 
+        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient 
     }
     .body h1{
         color: white;
@@ -560,18 +563,53 @@
         position:relative;
         top: 80px;
         color: #B24900;
-    
-    
     }
+    } */
     /*----les ecrans en 1024px et plus-----*/
-@media only screen and (min-width: 1024px){
-    
+
+    @media only screen and (max-width: 700px){
+        header{
+            font-size:5px ;
+        }
+        h1{
+            font-size:35px!important;
+        }
+        .head_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 40px;
+
+    }
     body{
         position: relative;
     
-        background-image:url('pics/bg.png');
+        background-image:url('../IMG/bg.png');
         background-size: cover;
+       
         
+    }
+    .body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    header+div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
     }
     *{
         font-weight: 700;
@@ -579,23 +617,19 @@
     }
     .landing_page{
     }
-    .head_content{
-        position: relative;
-        right: 10%;
-    }
+   
     .logo{
-        position: relative;
-        left: 15%;
-        top: 50px;
+       height: 40px;
+       width: 250px;
+        
     }
     .identifier{
         background-color: transparent;
         color: white;
-        float: right;
-        padding: 10px 30px;
-        border-radius: 5px;
+      
+        padding: 10px 15px;
+        border-radius: 6px;
         border: 1px solid #00567F;
-        font-size: 15px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         transition: 1s;
         cursor: pointer;
@@ -608,12 +642,10 @@
 
         background-color: #000000a0;
         color: white;
-        float: right;
-        right: 1%;
-        padding: 10px 15px;
+        padding: 10px 14px;
         border-radius: 6px;
-        border: 0.5px solid #00567F;
-        position: relative;
+        border: 1px solid #00567F;
+       
         transition: 1s ;
     }
     .language:hover{
@@ -631,12 +663,12 @@
     .mode{
         background-color: transparent;
         color: white;
-        float: right;
-        right: 2%;
+        
+        
         padding: 10px 15px;
         border-radius: 6px;
         border: 0.5px solid #00567F;
-        position: relative;
+      
         transition: 1s;
 
     }
@@ -651,34 +683,33 @@
     }
     .body h1{
         color: white;
-        margin-left: 35%;
+        text-align: center;
         margin-top: 5%;
         text-align: center;
         font-size: 50px;
-        width: 35%;
+        width: 50%;
 
     }
     .body h4{
         color: white;
-        margin-left: 35%;
+   
         text-align: center;
         width: 35%;
         margin-top: -1%;
     }
     .body p{
         color: white;
-        margin-top: -1%;
-        margin-left:20%;
+        
         font-size: 20px;
         text-align: center;
     }
     .inscrit{
-        margin-left: 33%;
+       
 
     }
     .email{
         background-color: transparent;
-        width: 30%;
+        width: 35%;
         text-align: center;
         padding: 20px 40px;
         border: 1px solid #B24900;
@@ -707,24 +738,24 @@
     footer h3{
         color: white;
         font-family:cursive;
-        float: right;
-        position:relative;
-        top: 80px;
+      
+        
+      
         color: #B24900;
 
 
     }
     
-}
+
         
 /*------les tablettes ------*/
-
+/* 
 @media only screen and (min-width: 768px) and (max-width:1024px){
     
     body{
         position: relative;
     
-        background-image:url('pics/bg.png');
+        background-image:url('IMG/bg.png');
         background-size: cover;
         
     }
@@ -800,9 +831,9 @@
     }
     .body{
         font-weight: bolder;
-        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient */
-        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte */
-        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient */
+        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient 
+        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte *
+        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient *
     }
     .body h1{
         color: white;
@@ -872,13 +903,13 @@
     
 }
 
-/*---- 1920px et plus */
+/*---- 1920px et plus *
 @media only screen and (min-width: 1920px){
     
     body{
         position: relative;
     
-        background-image:url('pics/bg.png');
+        background-image:url('IMG/bg.png');
         background-size: cover;
         
     }
@@ -954,9 +985,9 @@
     }
     .body{
         font-weight: bolder;
-        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient */
-        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte */
-        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient */
+        background: linear-gradient(360deg,#B24900, #00567F ); /* Gradient *
+        -webkit-background-clip: text; /*Pour masquer la partie arrière du texte *
+        -webkit-text-fill-color: transparent; /* Pour rendre le texte transparent et ne montrer que le gradient *
     }
     .body h1{
         color: white;
@@ -1024,4 +1055,4 @@
 
     }
     
-}
+} */
