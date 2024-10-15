@@ -16,14 +16,14 @@
         }
         
     }
-    header{
+    .index header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 40px;
 
     }
-    body{
+    .index{
         position: relative;
     
         background-image:url('../IMG/bg.png');
@@ -38,7 +38,7 @@
         justify-content: center;
         gap: 20px;
     }
-    header+div{
+    .index header+div{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -170,13 +170,53 @@
         background-color: #B24900;
         color: white;
     }
-    footer h3{
-        color: white;
-        font-family:cursive;
-      
-        
-      
-        color: #B24900;
+   
+/*            auth          */
+body{
+    background-image:url(/IMG/bc.avif);
 
-
-    }
+}
+.Auth>header div:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main>div{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    background-color: #00567F;
+    border-radius: 10px;
+    padding: 60px;
+    box-shadow: 0 2px 2px rgba(0,0, 0,0.6);
+    color: white;
+}
+main>div div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+main>div h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+main>div input{
+    width: 300px;
+    height: 20px;
+    border-radius: 2px;
+    border: 0px;
+    margin-top: 8px;
+}
+.HAuth{
+width: 100%;
+height: 150px;
+box-shadow: 0 1px rgba(0,0, 0,0.6);
+}
