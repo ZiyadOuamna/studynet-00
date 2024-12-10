@@ -68,8 +68,8 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#domains">Domains</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="/"  >Deconnexion</a></li>
+                    
                  
                 </ul>
             </div>
@@ -92,15 +92,19 @@
                 <div class="card shadow">
                     <div class="card-body">
                         <h5 class="card-title">IT</h5>
+                        
                     </div>
                 </div>
+                <br> 
             </div>
+           
             <div class="col-md-4">
                 <div class="card shadow">
                     <div class="card-body">
                         <h5 class="card-title">Economie</h5>
                     </div>
                 </div>
+                <br> 
             </div>
             <div class="col-md-4">
                 <div class="card shadow">
@@ -108,6 +112,7 @@
                         <h5 class="card-title">Littérature financière</h5>
                     </div>
                 </div>
+                <br> 
             </div>
         </div>
         <div class="row text-center">
@@ -117,6 +122,7 @@
                         <h5 class="card-title">Ecommerce</h5>
                     </div>
                 </div>
+                <br> 
             </div>
             <div class="col-md-4">
                 <div class="card shadow">
