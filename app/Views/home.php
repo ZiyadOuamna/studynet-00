@@ -85,6 +85,11 @@
     height: 3rem;
   
 }
+.vit-content {
+            text-align: center;
+            margin-bottom: 2vh;
+        }
+
 
     </style>
 </head>
@@ -104,7 +109,7 @@
                 <select class="mode">
                     <option value="fr">Sombre</option>
                     <option value="en">Blanc</option>
-                    <option value="es">Gris</option>
+                    
                 </select>
             </div>
         </header>
@@ -123,11 +128,16 @@
                 <input class="email mb-3" type="email" name="email" placeholder="Saisissez Votre E-mail">
                 <br>
                 <button class="commencer" name="submit">Commencer</button>
+                <div class="vit-content"> 
+                <h3>YOUR GATEWAY TO MASTERING SKILLS</h3>
+                </div>
             </form>
         </div>
     </section>
 </body> 
-<footer>
-    <h3>YOUR GATEWAY TO MASTERING SKILLS</h3>
-</footer>
+<footer class="mt-auto">
+        <div class="container">
+            <p>&copy; 2024 StudyNet. All rights reserved.</p>
+        </div>
+    </footer>
 </html>
