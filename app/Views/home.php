@@ -124,13 +124,13 @@
                 </p>
             </div>
      
-            <form class="sign-up mt-4" action="/acceuil-page" method="POST">
-                <input class="email mb-3" type="email" name="email" placeholder="Saisissez Votre E-mail">
+            <form class="sign-up mt-4" action="/acceuil" method="GET">
+              
                 <br>
       
                 <button class="commencer" name="submit" type="submit">Commencer</button>
                 </form>
-                
+                <br><br><br><br>
                 <div class="vit-content"> 
                 <h3>YOUR GATEWAY TO MASTERING SKILLS</h3>
                 </div>

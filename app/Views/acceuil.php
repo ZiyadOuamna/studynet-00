@@ -70,6 +70,9 @@
                     <li class="nav-item"><a class="nav-link" href="#domains">Domains</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                    <h1>Bienvenue sur StudyNet, <?= session()->get('user_name') ?></h1>
+    <p>Vous êtes connecté en tant que : <?= session()->get('user_role') ?></p>
+    <a href="/utilisateur/logout">Déconnexion</a>
                 </ul>
             </div>
         </div>
