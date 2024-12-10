@@ -97,7 +97,7 @@
     <section class="landing_page">
         <header>
             <div>
-                <img class="logo" src="pics/blue_logo.png" alt="Logo" width="200px">
+                <img class="logo" src="pics/blue_logo.png" alt="Logo" width="100px">
             </div>
             <div class="nav-bar d-flex gap-3">
                 <input class="identifier" type="button" value="S'identifie">
@@ -124,10 +124,13 @@
                 </p>
             </div>
      
-            <form class="sign-up mt-4" method="POST">
+            <form class="sign-up mt-4" action="/acceuil-page" method="POST">
                 <input class="email mb-3" type="email" name="email" placeholder="Saisissez Votre E-mail">
                 <br>
-                <button class="commencer" name="submit">Commencer</button>
+      
+                <button class="commencer" name="submit" type="submit">Commencer</button>
+                </form>
+                
                 <div class="vit-content"> 
                 <h3>YOUR GATEWAY TO MASTERING SKILLS</h3>
                 </div>
