@@ -29,7 +29,7 @@ class CreatePlaylistTable extends Migration
             ],
         ]);
         $this->forge->addPrimaryKey('id_playlist');
-        $this->forge->addForeignKey('id_domaine', 'Domaine', 'id_domaine', 'CASCADE', 'CASCADE');
+        // $this->forge->addForeignKey('id_domaine', 'Domaine', 'id_domaine', 'CASCADE', 'CASCADE');
         $this->forge->createTable('Playlist');
     }
 

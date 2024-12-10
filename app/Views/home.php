@@ -97,10 +97,13 @@
     <section class="landing_page">
         <header>
             <div>
-                <img class="logo" src="pics/blue_logo.png" alt="Logo" width="100px">
+                <img class="logo" src="../../IMG/blue_logo.png" alt="Logo" width="100px">
             </div>
             <div class="nav-bar d-flex gap-3">
-                <input class="identifier" type="button" value="S'identifie">
+                <form action="/utilisateur/login" method="GET">
+
+                <input class="identifier" type="submit" value="S'identifie" >
+                </form>
                 <select class="language">
                     <option value="fr">Français</option>
                     <option value="en">English</option>

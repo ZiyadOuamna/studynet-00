@@ -33,7 +33,6 @@ class UtilisateurController extends BaseController
             // Stocker les informations de session
             session()->set([
                 'isLoggedIn' => true,
-                'user_id' => $user['id'],
                 'user_name' => $user['name'],
                 'user_role' => $user['role']
             ]);
@@ -52,16 +51,18 @@ class UtilisateurController extends BaseController
     // Ajouter un utilisateur et rediriger vers la connexion
     public function store()
     {
-        $data = [
-            'name' => $this->request->getVar('name'),
-            'email' => $this->request->getVar('email'),
-            'password' => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT)
-        ];
-
-        $this->utilisateurModel->save($data);
-
-        // Redirection vers la page de connexion
-        return redirect()->to('/utilisateur/login')->with('success', 'Compte créé avec succès. Veuillez vous connecter.');
+        // Valider les données envoyées depuis le formulaire
+        $data = $this->request->getPost();
+    
+        // Vérification et hashage du mot de passe
+      
+    
+        // Sauvegarde dans la base de données
+        if ($this->utilisateurModel->save($data)) {
+            return redirect()->to('/utilisateur/login')->with('success', 'Utilisateur créé avec succès. Connectez-vous.');
+        } else {
+            return redirect()->back()->withInput()->with('error', 'Erreur lors de la création de l’utilisateur.');
+        }
     }
 
     // Déconnexion

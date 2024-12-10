@@ -28,7 +28,7 @@ class CreateVideoTable extends Migration
             ],
         ]);
         $this->forge->addPrimaryKey('id_video');
-        $this->forge->addForeignKey('id_playlist', 'Playlist', 'id_playlist', 'CASCADE', 'CASCADE');
+        // $this->forge->addForeignKey('id_playlist', 'Playlist', 'id_playlist', 'CASCADE', 'CASCADE');
         $this->forge->createTable('Video');
     }
 

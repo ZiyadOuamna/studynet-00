@@ -32,8 +32,8 @@ class CreateCommentaireTable extends Migration
             ],
         ]);
         $this->forge->addPrimaryKey('id_commentaire');
-        $this->forge->addForeignKey('id_video', 'Video', 'id_video', 'CASCADE', 'CASCADE');
-        $this->forge->addForeignKey('id_utilisateur', 'Utilisateur', 'id_utilisateur', 'CASCADE', 'CASCADE');
+        // $this->forge->addForeignKey('id_video', 'Video', 'id_video', 'CASCADE', 'CASCADE');
+        // $this->forge->addForeignKey('id_utilisateur', 'Utilisateur', 'id_utilisateur', 'CASCADE', 'CASCADE');
         $this->forge->createTable('Commentaire');
     }
 

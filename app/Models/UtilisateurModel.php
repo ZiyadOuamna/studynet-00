@@ -9,7 +9,7 @@ use CodeIgniter\Model;
 
 class UtilisateurModel extends Model
 {
-    protected $table = 'Utilisateurs';
+    protected $table = 'Utilisateur';
     protected $primaryKey = 'id_utilisateur';
     protected $allowedFields = ['nom', 'email', 'mot_de_passe', 'role'];
 

@@ -29,8 +29,8 @@ class CreateProgressionTable extends Migration
             ],
         ]);
         $this->forge->addPrimaryKey('id_progression');
-        $this->forge->addForeignKey('id_utilisateur', 'Utilisateur', 'id_utilisateur', 'CASCADE', 'CASCADE');
-        $this->forge->addForeignKey('id_playlist', 'Playlist', 'id_playlist', 'CASCADE', 'CASCADE');
+        // $this->forge->addForeignKey('id_utilisateur', 'Utilisateur', 'id_utilisateur', 'CASCADE', 'CASCADE');
+        // $this->forge->addForeignKey('id_playlist', 'Playlist', 'id_playlist', 'CASCADE', 'CASCADE');
         $this->forge->createTable('Progression');
     }
 
